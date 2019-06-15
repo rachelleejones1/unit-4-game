@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="assets/css/reset.css" class="style">
+    <link rel="stylesheet" href="assets/css/style.css" class="style">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+    <script class="src" src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center">
+                <strong>Crystal Collector</strong>
+            </h1>
+            <hr>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-lg-6">
+            
+                <div id="directions" class="card">
+                    <h4 class="card-header">How to play:</h4>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <p>You will be given a random number at the start of the game.</p>
+                            <br>
+                            <p>There are four different crystals. By clicking on a crystal, you will add a specific number of points to your total score.</p>
+                            <br>
+                            <p>To win the game, you must make your total score equal to the exact value of the random number. If your total score exceeds the value of the random number, you lose.</p>
+                            <br>
+                            <p>The value of each crystal changes when the game restarts. To know the value, you must click on the crystal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h4 class="card-header">Random Number</h4>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h1 id="randomNumber"></h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="visibilityControls" class="card">
+                    <h4 class="card-header">Your Score</h4>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h1 id="yourScore"></h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+       
+            <div class="col-lg-6">
+                <div class="gem_images">
+                    <img src="assets/images/blue_sapphire.png" alt="" class="gems" id="blue-sapphire">
+                    <img src="assets/images/diamond.jpg" alt="" class="gems" id="diamond">
+                    <img src="assets/images/amethyst.jpg" alt="" class="gems" id="amethyst">
+                    <img src="assets/images/pink_gem2.jpg" alt="" class="gems" id="pink_gem2"> 
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <div id="scorecard" class="card">
+                    <h4 class="card-header">Wins & Losses</h4>
+                    <div class="card-body">
+                        <div class="text-center mb-1">
+                            <h2 id="winCounter">Wins: </h2>
+                            <br>
+                            <h2 id="lossCounter">Losses: </h2>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+
+    </div>             
+</body>
+</html>
